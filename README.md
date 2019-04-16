@@ -21,8 +21,9 @@
 
 Para cada um dos itens abaixo, **calcule e mostre**: 
 
-1.1	O **valor total da compra**, que é a soma dos totais dos produtos comprados.
-1.2 O **valor em reais de desconto sobre o valor total dos livros educacionais**, conforme a regra abaixo:
+1.1.	O **valor total da compra**, que é a soma dos totais dos produtos comprados.
+
+1.2. O **valor em reais de desconto sobre o valor total dos livros educacionais**, conforme a regra abaixo:
 
 Valor total dos livros educacionais | Valor total da compra | Percentual de Desconto sobre o valor total dos livros educacionais
 ------------ | ------------- | -------------
@@ -32,12 +33,13 @@ Mais de R$100,00 até R$ 200,00 | Mais de R$ 600,00 (inclusive) | 7%
 Acima de R$200,00 (inclusive) | Até R$ 1.000,00 (inclusive) | 9%
 Acima de R$200,00 (inclusive) | Mais de R$ 1.000,00  | 10%
 
-1.3 Fazer o **cálculo do desvio padrão** utilizado os valores de **venda dos livros**.
-1.4 **O valor em reais de desconto sobre o valor total dos cadernos**, conforme a regra abaixo:
+1.3. Fazer o **cálculo do desvio padrão** utilizado os valores de **venda dos livros**.
+
+1.4. **O valor em reais de desconto sobre o valor total dos cadernos**, conforme a regra abaixo:
 
 *"O cliente receberá desconto de ¼ no valor total dos cadernos somente se o valor total dos cadernos acrescido do valor total em outros materiais escolares ultrapassar em duas vezes o valor total dos livros educacionais"*
 
-1.5 Calcule o **valor final da compra**, considerando o valor total da compra e os descontos concedidos.
+1.5. Calcule o **valor final da compra**, considerando o valor total da compra e os descontos concedidos.
 
 
 Desennvolvido Por Gabriel Filippi @GabrielFilippi
