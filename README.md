@@ -42,4 +42,4 @@ Acima de R$200,00 (inclusive) | Mais de R$ 1.000,00  | 10%
 1.5. Calcule o **valor final da compra**, considerando o valor total da compra e os descontos concedidos.
 
 
-Desennvolvido Por Gabriel Filippi @GabrielFilippi
+Desenvolvido Por Gabriel Filippi @GabrielFilippi
