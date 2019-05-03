@@ -442,7 +442,7 @@ R:
 | alive: true                             |
 
 ## PROBLEMA 36
-***Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva o diagrama de objetos. ***
+***Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva o diagrama de objetos.***
 
 R:
 
