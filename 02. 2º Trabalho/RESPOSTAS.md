@@ -148,3 +148,30 @@ class Executa {
    }
 }
 ```
+
+## PROBLEMA 18
+***O que é encapsulamento?***
+
+R: Encapsulamento é a técnica que faz com que detalhes internos do funcionamento dos métodos de uma classe permaneçam ocultos para os objetos. Por conta dessa técnica, o conhecimento a respeito da implementação interna da classe é desnecessário do ponto de vista do objeto, uma vez que isso passa a ser responsabilidade dos métodos internos da classe.
+
+## PROBLEMA 19
+***Qual é o objetivo do modificador de acessso public?***
+
+R: É a palavra-chave que define um atributo, método ou classe como público, privado ou protegido.
+
+## PROBLEMA 20
+***Qual é o objetivo do modificador de acessso private?***
+
+R:  Privado ou private, tem como objetivo de apenas os métodos da própria classe poderem manipular o atributo.
+
+## PROBLEMA 21
+***Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno com o atributo matrícula***
+
+R: O propósito do encapsulamento é o de organizar os dados que sejam relacionados, agrupando-os (encapsulando-os) em objetos (classes), reduzindo as colisões de nomes de variáveis (dado que variáveis com o mesmo nome estarão em namespaces distintos) e, da mesma forma, reunindo métodos relacionados às suas propriedades (ou variáveis de classe). Este padrão ajuda a manter um programa com centenas ou milhares de linhas de código mais legível e fácil de trabalhar e manter.
+
+A classe encapsula os dados relacionados do objeto. Para saber a matricula do aluno, podemmos perguntar ao Aluno.matricula. Se tivermos também o Objeto Professor com atributo matricula, chamamos esse por Professor.matricula. Os dois atributos têm o mesmo nome, mas cada um tem o seu próprio domínio. O mesmo pode ser dito sobre as operações de cada uma das classes. Isto é encapsulamento!
+
+## PROBLEMA 22
+***Qual o objetivo dos métodos getters? Crie um exemplo***
+
+R: O
