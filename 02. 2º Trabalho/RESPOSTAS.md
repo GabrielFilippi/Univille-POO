@@ -110,3 +110,41 @@ No paradigma de orientação a objetos, tudo pode ser potencialmente representad
 
 * Um espaço em memória para registrar o seu estado atual (um valor);
 * Um conjunto de operações associadas que podem ser aplicadas a ela, através dos operadores definidos na linguagem que podem ser aplicados a valores inteiros (soma, subtração, inversão de sinal, multiplicação, divisão inteira, resto da divisão inteira, incremento, decremento).
+
+## PROBLEMA 14
+***Qual é o objetivo do operador new?***
+
+R: O operador new cria uma instancia de um tipo de objeto definido pelo usuário ou de um dos tipos nativos (built-in) que possuem uma função construtora.
+
+## PROBLEMA 15
+***O que é o construtor? Qual é o seu objetivo? Qual deve ser o seu nome? Cite um exemplo***
+
+R: O (pseudo-)método construtor determina que ações devem ser executadas quando da criação de um objeto. Em Java, o construtor é definido como um método cujo nome deve ser o mesmo nome da classe e sem indicação do tipo de retorno -- nem mesmo void. O construtor é unicamente invocado no momento da criação do objeto através do operador new.
+
+## PROBLEMA 16
+***Caso o construtor da classe Aluno não for declarado, qual será o seu construtor?***
+
+R: Será o construtor padrão, pois ao criar uma classe, por padrão sempre teremos um construtor padrão.
+
+## PROBLEMA 17
+***Crie um exemplo de instanciação da classe Aluno. Utilize o construtor padrão***
+
+R: 
+```
+class Pessoa {
+   String tipo = "";
+   public Pessoa(String tipo){
+      this.tipo = tipo; //Aqui, o this.tipo representa a variavel que esta fora do escopo, ou seja, o que recebemos como argumento
+                             //é passado para a variavel de instancia.
+   }
+   public String getTipo(){
+      return tipo;
+   }
+}
+class Executa {
+   public static void main(String args[]){
+      Pessoa p = new Pessoa("Pessoa Juridica");
+      System.out.println("O tipo de pessoa é: "+p.getTipo());
+   }
+}
+```
