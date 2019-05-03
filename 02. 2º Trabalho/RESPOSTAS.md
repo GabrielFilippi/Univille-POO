@@ -174,4 +174,36 @@ A classe encapsula os dados relacionados do objeto. Para saber a matricula do al
 ## PROBLEMA 22
 ***Qual o objetivo dos métodos getters? Crie um exemplo***
 
-R: O
+R: O método getter é utilizado para recuperar alguma informação, geralmente utilizado para trazer informação de algum atributo, sem ter que utilizar o atributo explicitamente. Então chamamos atraves de métodos.
+
+## PROBLEMA 23
+***Qual o objetivo dos métodos setters? Crie um exemplo***
+
+R: Método setter é utilizado para setar um valor dentro de um objeto, de uma variavel. *Exemplo após resposta do problema 24*
+
+## PROBLEMA 24
+***Qual o objetivo dos métodos setters? Crie um exemplo***
+
+R: Método setter é utilizado para setar um valor dentro de um objeto, de uma variavel. *Exemplo abaixo.*
+
+### Exemplo de Get e Set questão 23 e 24
+```
+public class Ponto {
+    private double x;
+    private double y;
+ 
+    public Ponto(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+    public double getX() { return x; }
+    public double getY() { return y; }
+    public void setX(double x) { this.x = x; }
+    public void setY(double y) { this.y = y; }
+}
+```
+
+## PROBLEMA 25
+***O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?***
+
+R: 
