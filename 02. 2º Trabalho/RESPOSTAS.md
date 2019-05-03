@@ -63,7 +63,7 @@ O nome da classe deve fazer referência total ao seu objeto (atributos e método
 4. CarroEletrico
 5. carro eletrico
 
-R: Opção 04.
+R: Opção 4.
 
 ## PROBLEMA 09
 ***Qual é o padrão utilizado para nomear os atributos? Cite um exemplo.***
@@ -73,3 +73,40 @@ R: Os atributos (variáveis) podem começar com qualquer letra e os caracteres $
 Caso o nome de um atributo (variável) seja composto por mais de uma palavra, a primeira letra de cada palavra deve ser em maiúscula.
 
 Exemplos de nomes de atributos ou variáveis: x, y, resultado, valorDeX, valorDeY, ligado,
+
+## PROBLEMA 10
+***Qual opção apresenta corretamente o nome do atributo cor de fundo?***
+1. CordeFundo
+2. CorDeFundo
+3. corDeFundo
+4. cor de fundo
+5. corDeFundo
+6. mCorDeFundo
+
+R: Opção 3.
+
+## PROBLEMA 11
+***Qual é o padrão utilizado para nomear os métodos? Cite um exemplo***
+
+R: Caso palavra não composta deve-se escrever tudo em minusculo. Caso seja composto por mais de uma palavra, a primeira letra de cada palavra deve ser em maiúscula.
+
+## PROBLEMA 12
+***Qual opção apresenta corretamente o nome do método esta vazio?***
+1. estaVazio
+2. _estaVazio
+3. estavazio
+4. EstaVazio
+5. Estavazio
+6. Esta vazio
+
+R: Opção 1.
+
+## PROBLEMA 13
+***No contexto de orientação à objetos, o que é um objeto? Em que momento existe um objeto? Quando ele deixa de existir?***
+
+R: Um objeto é um elemento computacional que representa, no domínio da solução, alguma entidade (abstrata ou concreta) do domínio de interesse do problema sob análise. Objetos similares são agrupados em classes.
+
+No paradigma de orientação a objetos, tudo pode ser potencialmente representado como um objeto. Sob o ponto de vista da programação, um objeto não é muito diferente de uma variável no paradigma de programação convencional. Por exemplo, quando define-se uma variável do tipo int em C ou em Java, essa variável tem:
+
+* Um espaço em memória para registrar o seu estado atual (um valor);
+* Um conjunto de operações associadas que podem ser aplicadas a ela, através dos operadores definidos na linguagem que podem ser aplicados a valores inteiros (soma, subtração, inversão de sinal, multiplicação, divisão inteira, resto da divisão inteira, incremento, decremento).
