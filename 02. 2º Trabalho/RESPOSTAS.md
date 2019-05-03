@@ -207,3 +207,11 @@ public class Ponto {
 ***O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?***
 
 R: 
+1. Nome da Classe: Nome da Classe, ex.: Pessoa
+2. Atributos: Os atributos da classe em questão, ex.: altura, cpf
+3. Métodos: Os métodos da classe, ex.: getNome().
+
+## PROBLEMA 26
+***Qual é o padrão utilizado para representar um método no diagrama de classe UML? Crie um exemplo.***
+
+R: 
