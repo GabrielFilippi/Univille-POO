@@ -37,4 +37,4 @@ R: A programação orientada a objetos tem como principais objetivos reduzir a c
 ## PROBLEMA 05
 ***O que é abstração? Cite um exemplo***
 
-R:
+R: Conseguir abstrair um item do mundo real e transforma-lo em uma classe focando nos principais atributos necessários.
