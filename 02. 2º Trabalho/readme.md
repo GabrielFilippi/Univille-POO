@@ -214,4 +214,252 @@ R:
 ## PROBLEMA 26
 ***Qual é o padrão utilizado para representar um método no diagrama de classe UML? Crie um exemplo.***
 
+R: indicam operações que serao realizadas, estas nomeadas com ações. Como visto no exemplo abaixo:
+
+| Carro                                   |
+|-----------------------------------------|
+|                                         |
+|-----------------------------------------|
+| #+abrirCarro: boolean                   |
+
+## PROBLEMA 27
+***Como o construtor de uma classe pode ser diferenciado no diagrama de classe UML? Crie um exemplo.***
+
+R: Utilizando o <<create>> antes do metodo que leva o nome da classe.
+   
+```
+<< create >>+Livro(autor:String, titulo: String)
+```
+
+## PROBLEMA 28
+***Problema Quais São os simbolos utlizados no diagrma de classe UML para representar os modificadores de acessos aos atributos e métodos? Crie um exemplo.***
+
+R:
+~default
+#protegido
++publico
+-privado
+
+| Pessoa                                  |
+|-----------------------------------------|
+| -nome: String                           |
+|-----------------------------------------|
+| #definirPeso(): void +getNome(): String |
+
+## PROBLEMA 29
+***Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos metodos getters e setters. Desenvolva o diagrama de classe UML.***
+
+R:
+
+
+| Cliente                                  |
+|----------------------------------------- |
+| -nome: String                            |
+| -email: String                           |
+| -telefone: int                           |
+|------------------------------------------|
+| +getNome(): String                       | 
+| +setNome(nome: String)                   | 
+| +getEmail(): String                      |
+| +setEmail(email: String)                 |
+| +getTel(): int                           |
+| +setTel(tel: int)                        |
+
+
+## PROBLEMA 30
+***Considere a classe Cliente apresentado no Problema 29, e desenvolva o código Java correspondente.***
+
+R:
+
+```
+public class Cliente{  
+
+    private String nome;  
+
+    private String email; 
+
+    private int telefone;  
+
+    public String getNome() { 
+
+        return nome; 
+
+    } 
+
+    public void setNome(String nome) { 
+
+        this.nome = nome; 
+
+    }  
+
+    public String getEmail() { 
+
+        return email; 
+
+    } 
+
+    public void setEmail(String email) { 
+
+        this.email = email; 
+
+    } 
+
+    public int getTelefone() { 
+
+        return telefone; 
+
+    } 
+
+    public void setTelefone(int telefone) { 
+
+        this.telefone = telefone; 
+
+    } 
+
+} 
+```
+
+## PROBLEMA 31
+***Desenvolva o código java das classes do apresentadas no diagrama de classes UML abaixo:***
+
+R:
+
+```
+public class Produto { 
+
+    private String nome;   
+
+    public String getNome() { 
+
+        return nome; 
+
+    } 
+
+    public void setNome(String nome) { 
+
+        this.nome = nome; 
+
+    } 
+
+} 
+
+public class Password{ 
+
+private String value;   
+
+public void Password(String value) { 
+
+this.value = value; 
+
+} 
+
+public boolean isEqual(Password p){ 
+
+return false; 
+
+} 
+
+} 
+
+public class Animal{ 
+
+private boolean alive; 
+
+public boolean isAlive(){ 
+
+return false; 
+
+} 
+
+private void die(){ 
+
+} 
+
+} 
+```
+
+## PROBLEMA 32
+***Desenvolva o diagrama de classe dos códigos Java abaixo. ***
+
+R:
+
+| Livro                                   |
+|-----------------------------------------|
+| -nome: String                           |
+|-----------------------------------------|
+| +getNome(): String                      |
+|  +setNome(nome: String)                 |
+
+ 
+| contaCorrente                           |
+|-----------------------------------------|
+| -saldo: double                          |
+|-----------------------------------------|
+| +sacar(): double                        |
+| +depositar(valor: double)               |
+| -recalcularSaldo()                      |
+
+| Par                                     |
+|-----------------------------------------|
+|+chave: String                           |
+|+valor: String                           |
+|-----------------------------------------|
+
+ 
+|Impressora                               |
+|-----------------------------------------|
+|                                         |
+|-----------------------------------------|
+|+depositar(documento: Documento)         |
+
+## PROBLEMA 33
+***O que é o estado de um objeto? Cite um exemplo com a classe Aluno com os atributos nome, idade, matrícula e curso. Utilize o diagrama de estado de objeto.*** 
+
+R: Os valores atribuídos aos atributos de um objeto definem o seu estado.
+
+## PROBLEMA 34 
+***Qual é o estado do objeto da classe Dog quando é inicializado? Desenvolva o diagrama de objetos.***
+
 R: 
+
+| D: Dog                                  |
+|-----------------------------------------|
+| years: 0                                |
+| name: null                              |
+| alive: false                            |
+
+........................
+
+## PROBLEMA 35
+***Qual é o estado do objeto dog no final da execução do método main? Desenvolva o diagrama de objetos.***
+
+R:
+
+| D: Dog                                  |
+|-----------------------------------------|
+| years: 0                                |
+| name: null                              |
+| alive: true                             |
+
+## PROBLEMA 36
+***Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva o diagrama de objetos. ***
+
+R:
+
+| B: Dog                                  |
+|-----------------------------------------|
+| years: 0                                |
+| name: null                              |
+| alive: false                            |
+
+| P: Dog                                  |
+|-----------------------------------------|
+| years: 2                                |
+| name: LILICA                            |
+| alive: true                            |
+
+## PROBLEMA 37
+***Analise o código abaixo. Verifique se existem problemas, caso sim, indique o problema e sugere as correções.***
+
+R: Na imagem é acessado de forma direta os atributos, porém, como é padrão deixá-los em privado, automaticamente é necessário o uso de setters para definir valor para os atributos e getters para retornar o valor do atributo. 
+
