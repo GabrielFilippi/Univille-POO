@@ -1,0 +1,37 @@
+package com.gabriel.app.radiofm;
+
+import com.gabriel.app.calendario.Calendario;
+import com.gabriel.app.calendario.CalendarioFormatter;
+import com.gabriel.app.display.Display;
+
+public class RadioFmDisplay extends Display<RadioFm> {
+
+	private RadioFmFormatter cFormatter = new RadioFmFormatter();
+
+	private RadioFm radioFm;
+	
+	//construtor
+	public RadioFmDisplay() {
+		this.radioFm = new RadioFm();
+		this.radioFm.setDia(5);
+		this.radioFm.setMes(7);
+		this.radioFm.setAno(2019);
+	}
+	
+	public void show() {
+		System.out.println(cFormatter.formatter(calendario));
+	}
+	
+	
+	
+	
+	
+	
+	
+	private double estacao;
+
+	public void show() {
+
+	}
+
+}

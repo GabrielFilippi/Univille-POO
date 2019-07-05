@@ -1,0 +1,16 @@
+package com.gabriel.app.calendario;
+
+import com.gabriel.app.display.Formatter;
+
+public class CalendarioFormatter implements Formatter<Calendario> {
+
+	/**
+	 * @see com.gabriel.app.display.Formatter#formatter(com.gabriel.app.display.T)
+	 * 
+	 *  
+	 */
+	public String formatter(Calendario dia, Calendario mes, Calendario ano) {
+		return String.format("%f/%f/%f", dia.getDia(), );
+	}
+
+}

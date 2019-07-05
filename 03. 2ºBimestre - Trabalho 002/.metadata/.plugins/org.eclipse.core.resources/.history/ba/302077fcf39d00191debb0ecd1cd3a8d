@@ -1,0 +1,13 @@
+package com.gabriel.app.temperatura;
+import com.gabriel.app.temperatura.TemperaturaDisplay;
+
+public class Main {
+	public static void main(String[] args) {
+		TemperaturaDisplay tDisplay = new TemperaturaDisplay();
+		tDisplay.show();
+		
+		
+		
+		
+	}
+}

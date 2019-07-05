@@ -1,0 +1,15 @@
+package com.gabriel.app.temperatura;
+
+public class Temperatura {
+	private double valor;
+	private TemperaturaDisplay tDisplay = new TemperaturaDisplay();
+
+	public double getValor() {
+		tDisplay.show();
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+}

@@ -1,0 +1,17 @@
+package com.gabriel.app.radiorelogio;
+
+import java.util.Date;
+
+public class RadioRelogio {
+	private String hora;
+
+	public Date getHora() {
+		return hora;
+	}
+
+	public void setHora(Date hora) {
+		this.hora = hora;
+	}
+	
+	
+}

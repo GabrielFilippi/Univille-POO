@@ -1,0 +1,7 @@
+package com.gabriel.app.radiorelogio;
+
+import java.util.Date;
+
+public class RadioRelogio {
+	private Date hora;
+}

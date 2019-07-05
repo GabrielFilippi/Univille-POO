@@ -1,0 +1,15 @@
+package com.gabriel.app.radiorelogio;
+
+import java.util.Date;
+
+import com.gabriel.app.display.Display;
+
+public class RadioRelogioDisplay extends Display {
+
+	private Date hora;
+
+	public void show() {
+
+	}
+
+}

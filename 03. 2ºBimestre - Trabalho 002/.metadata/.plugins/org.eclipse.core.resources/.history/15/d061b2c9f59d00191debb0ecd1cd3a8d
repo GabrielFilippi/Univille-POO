@@ -1,0 +1,22 @@
+package com.gabriel.app.calendario;
+
+public class Calendario {
+	private int dia;
+	private int mes;
+	private int ano;
+
+	public double getDia() {
+		return this.dia;
+	}
+	public double getMes() {
+		return this.mes;
+	}
+	public double getAno() {
+		return this.ano;
+	}
+
+	public void setDia(double valor) {
+		this.valor = valor;
+	}
+	
+}

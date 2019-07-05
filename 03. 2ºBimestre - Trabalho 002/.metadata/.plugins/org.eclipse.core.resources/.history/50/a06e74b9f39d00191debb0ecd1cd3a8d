@@ -1,0 +1,16 @@
+import com.gabriel.app.temperatura.Temperatura;
+import com.gabriel.app.temperatura.TemperaturaDisplay;
+
+public class Main {
+	public static void main(String[] args) {
+		Temperatura temp = new Temperatura();
+		TemperaturaDisplay tDisplay = new TemperaturaDisplay();
+		
+		temp.setValor(31.1);
+		tDisplay.show();
+		
+		
+		
+		
+	}
+}

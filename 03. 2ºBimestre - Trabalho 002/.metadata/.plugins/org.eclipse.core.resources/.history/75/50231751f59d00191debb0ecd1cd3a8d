@@ -1,0 +1,24 @@
+package com.gabriel.app.calendario;
+
+import com.gabriel.app.display.Display;
+import com.gabriel.app.temperatura.Temperatura;
+import com.gabriel.app.temperatura.TemperaturaFomatter;
+
+public class CalendarioDisplay extends Display {
+	private CalendarioFormatter cFormatter = new CalendarioFormatter();
+
+	private Calendario dia;
+	private Calendario mes;
+	private Calendario ano;
+	//construtor
+	public CalendarioDisplay() {
+		this.dia = new Calendario();
+		this.dia.setValor(10);
+	}
+	
+	public void show() {
+
+	}
+	
+
+}

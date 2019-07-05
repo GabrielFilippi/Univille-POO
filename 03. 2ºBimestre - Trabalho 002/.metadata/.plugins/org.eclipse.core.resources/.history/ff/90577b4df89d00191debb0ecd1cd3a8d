@@ -1,0 +1,18 @@
+package com.gabriel.app;
+import com.gabriel.app.calendario.CalendarioDisplay;
+import com.gabriel.app.temperatura.TemperaturaDisplay;
+
+public class Main {
+	public static void main(String[] args) {
+		// temperatura
+		TemperaturaDisplay tDisplay = new TemperaturaDisplay();
+		System.out.println("Temperatura: ");
+		tDisplay.show();
+		System.out.println();
+		//calendario 
+		System.out.println("Calendario");
+		CalendarioDisplay cDisplay = new CalendarioDisplay();
+		cDisplay.show();
+		
+	}
+}

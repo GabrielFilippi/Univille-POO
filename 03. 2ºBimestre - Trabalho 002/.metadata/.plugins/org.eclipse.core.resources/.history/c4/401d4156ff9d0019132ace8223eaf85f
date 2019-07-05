@@ -1,0 +1,16 @@
+package com.gabriel.app.radiofm;
+
+public class RadioFm {
+	private double estacao;
+
+	public double getEstacao() {
+		return estacao;
+	}
+
+	public void setEstacao(double estacao) {
+		this.estacao = estacao;
+	}
+	
+	
+	
+}

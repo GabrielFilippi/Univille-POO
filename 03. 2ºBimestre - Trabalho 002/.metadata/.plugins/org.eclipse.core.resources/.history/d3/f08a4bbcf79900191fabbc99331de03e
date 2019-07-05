@@ -1,0 +1,22 @@
+package com.gabriel.app.calendario;
+
+import com.gabriel.app.display.Formatter;
+import com.gabriel.app.display.T;
+
+public class CalendarioFormatter implements Formatter {
+
+	public toString() {
+
+	}
+
+
+	/**
+	 * @see com.gabriel.app.display.Formatter#formatter(com.gabriel.app.display.T)
+	 * 
+	 *  
+	 */
+	public formatter(T value) {
+
+	}
+
+}

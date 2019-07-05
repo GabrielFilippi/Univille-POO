@@ -1,0 +1,13 @@
+package com.gabriel.app.radiorelogio;
+
+import com.gabriel.app.display.Display;
+
+public class RadioRelogioDisplay extends Display {
+
+	private Date hora;
+
+	public show() {
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.gabriel.app;
+import com.gabriel.app.calendario.CalendarioDisplay;
+import com.gabriel.app.temperatura.TemperaturaDisplay;
+
+public class Main {
+	public static void main(String[] args) {
+		//Rádio Fm
+		System.out.println("Rádio Fm");
+		RadioFmDisplay rFmDisplay = new RadioFmDisplay();
+		cDisplay.show();
+		System.out.println();
+		
+		//calendario 
+		System.out.println("Calendario");
+		CalendarioDisplay cDisplay = new CalendarioDisplay();
+		cDisplay.show();
+		System.out.println();
+		
+		// temperatura
+		TemperaturaDisplay tDisplay = new TemperaturaDisplay();
+		System.out.println("Temperatura: ");
+		tDisplay.show();
+		
+		
+	}
+}

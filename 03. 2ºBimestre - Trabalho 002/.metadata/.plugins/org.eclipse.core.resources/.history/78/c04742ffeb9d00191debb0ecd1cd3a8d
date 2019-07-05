@@ -1,0 +1,23 @@
+package com.gabriel.app.calendario;
+
+import com.gabriel.app.display.Formatter;
+import com.gabriel.app.radiorelogio.String;
+import com.gabriel.app.display.T;
+
+public class CalendarioFormatter implements Formatter {
+
+	public String fomatter(Calendario value) {
+		return null;
+	}
+
+
+	/**
+	 * @see com.gabriel.app.display.Formatter#formatter(com.gabriel.app.display.T)
+	 * 
+	 *  
+	 */
+	public String formatter(T value) {
+		return null;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.gabriel.app.radiofm;
+
+import com.gabriel.app.display.Formatter;
+import com.gabriel.app.radiorelogio.String;
+import com.gabriel.app.display.T;
+
+public class RadioFmFormatter implements Formatter {
+
+	public String formatter(RadioFm value) {
+		return null;
+	}
+
+
+	/**
+	 * @see com.gabriel.app.display.Formatter#formatter(com.gabriel.app.display.T)
+	 * 
+	 *  
+	 */
+	public String formatter(T value) {
+		return null;
+	}
+
+}

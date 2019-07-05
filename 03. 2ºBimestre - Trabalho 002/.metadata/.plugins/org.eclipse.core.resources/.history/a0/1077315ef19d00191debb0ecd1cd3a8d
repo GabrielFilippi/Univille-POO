@@ -1,0 +1,10 @@
+package com.gabriel.app.temperatura;
+
+public class Temperatura {
+	private double valor;
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+}

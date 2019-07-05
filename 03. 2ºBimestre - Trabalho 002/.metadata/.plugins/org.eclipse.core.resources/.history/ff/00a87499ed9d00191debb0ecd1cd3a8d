@@ -1,0 +1,13 @@
+package com.gabriel.app.temperatura;
+
+import com.gabriel.app.display.Display;
+
+public class TemperaturaDisplay extends Display {
+
+	private double temperatura;
+
+	public void show() {
+
+	}
+
+}

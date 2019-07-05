@@ -1,0 +1,22 @@
+package com.gabriel.app.radiorelogio;
+
+import java.util.Calendar;
+
+import com.gabriel.app.display.Display;
+
+public class RadioRelogioDisplay extends Display<RadioRelogio> {
+	Calendar calendar = Calendar.getInstance();
+	private RadioRelogioFormatter rRFormatter = new RadioRelogioFormatter();
+	
+	private RadioRelogio hora;
+	
+	public RadioRelogioDisplay() {
+		this.hora = new RadioRelogio();
+		this.hora.setHora(calendar.HOUR_OF_DAY+":"+calendar.MINUTE+":"+calendar.SECOND);
+	}
+
+	public void show() {
+		System.out.println(rRFormatter.formatter(hora));
+	}
+
+}

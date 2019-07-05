@@ -1,0 +1,7 @@
+package com.gabriel.app.display;
+
+public interface Formatter {
+
+	public abstract formatter(T value);
+
+}

@@ -1,0 +1,9 @@
+package com.gabriel.app.display;
+
+import com.gabriel.app.radiorelogio.String;
+
+public interface Formatter<T> {
+
+	public abstract String formatter(T value);
+
+}

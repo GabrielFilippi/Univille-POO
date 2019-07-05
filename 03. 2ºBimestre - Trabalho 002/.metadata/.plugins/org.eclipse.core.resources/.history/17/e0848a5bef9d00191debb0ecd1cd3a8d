@@ -1,0 +1,7 @@
+package com.gabriel.app.temperatura;
+
+public class Temperatura {
+	public void Temperatura() {
+		
+	}
+}

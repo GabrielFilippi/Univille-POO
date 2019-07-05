@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.gabriel.app.temperatura.Temperatura"/>
+<fullyQualifiedTypeName name="com.gabriel.app.calendario.CalendarioDisplay"/>
+<fullyQualifiedTypeName name="com.gabriel.app.radiofm.RadioFmDisplay"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.gabriel.app.radiorelogio.RadioRelogioDisplay"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.gabriel.app.radiorelogio.RadioRelogio"/>
+</qualifiedTypeNameHistroy>

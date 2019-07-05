@@ -1,0 +1,17 @@
+package com.gabriel.app.radiorelogio;
+
+import com.gabriel.app.display.Formatter;
+
+public class RadioRelogioFormatter implements Formatter<RadioRelogio> {
+
+	/**
+	 * @see com.gabriel.app.display.Formatter#formatter(com.gabriel.app.display.T)
+	 * 
+	 *  
+	 */
+	public String formatter(RadioRelogio value) {
+		return;
+	}
+
+
+}

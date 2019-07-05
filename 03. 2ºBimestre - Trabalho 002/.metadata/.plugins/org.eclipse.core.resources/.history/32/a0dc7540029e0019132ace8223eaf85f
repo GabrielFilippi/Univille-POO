@@ -1,0 +1,23 @@
+package com.gabriel.app.radiorelogio;
+
+import java.util.Date;
+
+import com.gabriel.app.display.Display;
+import com.gabriel.app.temperatura.TemperaturaFomatter;
+
+public class RadioRelogioDisplay extends Display<RadioRelogio> {
+
+	private RadioRelogioFomatter rRFormatter = new RadioRelogioFomatter();
+	
+	private RadioRelogio hora;
+	
+	public RadioRelogioDisplay() {
+		this.hora = new RadioRelogio();
+		this.hora.setHora();
+	}
+
+	public void show() {
+		System.out.println(rRFormatter.formatter(temperatura));
+	}
+
+}
