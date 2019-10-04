@@ -1,0 +1,69 @@
+package entities;
+
+public class Tarefa{
+
+	private int idTarefa;
+	private int Usuario_idUsuario;
+	private String nomeTarefa;
+	private int statusTarefa;
+	private String descricaoTarefa;
+	
+	public Tarefa() {
+	}
+	
+	public Tarefa(int Usuario_idUsuario, String nomeTarefa, int statusTarefa, String descricaoTarefa) {
+		this.Usuario_idUsuario = Usuario_idUsuario;
+		this.nomeTarefa = nomeTarefa;
+		this.statusTarefa = statusTarefa;
+		this.descricaoTarefa = descricaoTarefa;
+	}
+	
+	public Tarefa(int idTarefa, int Usuario_idUsuario, String nomeTarefa, int statusTarefa, String descricaoTarefa) {
+		this.idTarefa = idTarefa;
+		this.Usuario_idUsuario = Usuario_idUsuario;
+		this.nomeTarefa = nomeTarefa;
+		this.statusTarefa = statusTarefa;
+		this.descricaoTarefa = descricaoTarefa;
+	}
+
+	public int getIdTarefa() {
+		return idTarefa;
+	}
+	
+	public int getUsuario_idUsuario() {
+		return Usuario_idUsuario;
+	}
+	
+	public String getNomeTarefa() {
+		return nomeTarefa;
+	}
+	
+	public void setNomeTarefa(String nomeTarefa) {
+		this.nomeTarefa = nomeTarefa;
+	}
+	
+	public int getStatusTarefa() {
+		return statusTarefa;
+	}
+
+	public void setStatusTarefa(int statusTarefa) {
+		this.statusTarefa = statusTarefa;
+	}
+
+	public String getDescricaoTarefa() {
+		return descricaoTarefa;
+	}
+	
+	public void setDescricaoTarefa(String descricaoTarefa) {
+		this.descricaoTarefa = descricaoTarefa;
+	}
+	
+	@Override
+	public String toString() {
+		return "Tarefa " + nomeTarefa+"\n"
+				+ "Id Tarefa: " + idTarefa 
+				+ "Status da Tarefa=" +  statusTarefa ? "Não Realizado" : "Realzado"
+				+ "Descrição:" + descricaoTarefa + "\n";
+	}
+		
+}

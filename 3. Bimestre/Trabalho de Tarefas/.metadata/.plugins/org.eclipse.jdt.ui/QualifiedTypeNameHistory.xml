@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="dao.TarefaDAO"/>
+<fullyQualifiedTypeName name="entities.Tarefa"/>
+<fullyQualifiedTypeName name="dao.SubTarefaDAO"/>
+<fullyQualifiedTypeName name="entities.SubTarefa"/>
+<fullyQualifiedTypeName name="dao.UsuarioDAO"/>
+<fullyQualifiedTypeName name="entities.Usuario"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="functions.Funcoes"/>
+<fullyQualifiedTypeName name="functions.InsertDb"/>
+</qualifiedTypeNameHistroy>

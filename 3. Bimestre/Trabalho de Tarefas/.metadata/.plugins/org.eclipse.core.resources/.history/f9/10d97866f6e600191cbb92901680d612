@@ -1,0 +1,22 @@
+import dao.SubTarefaDAO;
+import dao.TarefaDAO;
+import dao.UsuarioDAO;
+import entities.SubTarefa;
+import entities.Tarefa;
+import entities.Usuario;
+
+public class MainInsert {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

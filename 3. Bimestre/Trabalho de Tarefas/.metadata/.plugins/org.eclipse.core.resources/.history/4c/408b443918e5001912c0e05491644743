@@ -1,0 +1,36 @@
+package entities;
+
+import java.util.ArrayList;
+
+public class Tarefa{
+	private int id;
+	private int idUsuario = user.getId();
+	ArrayList<String> listaTarefa = new ArrayList<>();
+	
+	public Tarefa(int id, int idUsuario, ArrayList<String> listaTarefa) {
+		super();
+		this.id = id;
+		this.listaTarefa = listaTarefa;
+	}
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+	
+	public int getIdUsuario() {
+		return this.idUsuario;
+	}
+	
+	public ArrayList<String> getListaTarefa() {
+		return listaTarefa;
+	}
+	
+	public void setListaTarefa(ArrayList<String> listaTarefa) {
+		this.listaTarefa = listaTarefa;
+	}
+	
+	
+	
+}

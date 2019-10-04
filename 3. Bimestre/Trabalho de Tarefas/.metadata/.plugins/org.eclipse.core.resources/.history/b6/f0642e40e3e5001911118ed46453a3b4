@@ -1,0 +1,7 @@
+package functions;
+
+public static String retornaLista(int idUsuario) {
+	
+	
+	return "sdfs";
+}

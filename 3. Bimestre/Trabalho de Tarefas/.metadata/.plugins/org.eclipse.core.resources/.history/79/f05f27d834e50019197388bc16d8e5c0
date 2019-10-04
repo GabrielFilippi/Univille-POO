@@ -1,0 +1,51 @@
+package entities;
+
+public class SubTarefa{
+	private int idSub_Tarefa;
+	private int Tarefa_idTarefa;
+	private String itemSubTarefa;
+	private int statusSubTarefa;
+	
+	
+	public SubTarefa() {
+	}
+	
+	public SubTarefa(int tarefa_idTarefa, String itemSubTarefa, int statusSubTarefa) {
+		super();
+		Tarefa_idTarefa = tarefa_idTarefa;
+		this.itemSubTarefa = itemSubTarefa;
+		this.statusSubTarefa = statusSubTarefa;
+	}
+
+	public SubTarefa(int idSub_Tarefa, int tarefa_idTarefa, String itemSubTarefa, int statusSubTarefa) {
+		this.idSub_Tarefa = idSub_Tarefa;
+		this.Tarefa_idTarefa = tarefa_idTarefa;
+		this.itemSubTarefa = itemSubTarefa;
+		this.statusSubTarefa = statusSubTarefa;
+	}
+
+	public int getIdSub_Tarefa() {
+		return idSub_Tarefa;
+	}
+	
+	public int getTarefa_idTarefa() {
+		return Tarefa_idTarefa;
+	}
+	
+	public String getItemSubTarefa() {
+		return itemSubTarefa;
+	}
+	
+	public void setItemSubTarefa(String itemSubTarefa) {
+		this.itemSubTarefa = itemSubTarefa;
+	}
+	
+	public int getStatusSubTarefa() {
+		return statusSubTarefa;
+	}
+	
+	public void setStatusSubTarefa(int statusSubTarefa) {
+		this.statusSubTarefa = statusSubTarefa;
+	}
+	
+}

@@ -1,0 +1,7 @@
+package functions;
+
+public class String retornaLista(int idUsuario) {
+	
+	
+	return null;
+}

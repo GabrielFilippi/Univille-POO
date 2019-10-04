@@ -1,0 +1,24 @@
+package entities;
+
+public class SubTarefa{
+	private int idItem_Tarefa;
+	private int Tarefa_idTarefa;
+	provate String itemSubTarefa;
+	private int statusSubTarefa;
+	
+	
+	public String getSubTarefa() {
+		return subTarefa;
+	}
+	public void setSubTarefa(String subTarefa) {
+		this.subTarefa = subTarefa;
+	}
+	public int getUsuario_idUsuario() {
+		return Usuario_idUsuario;
+	}
+	public int getTarefa_idTarefa() {
+		return Tarefa_idTarefa;
+	}
+	
+
+}

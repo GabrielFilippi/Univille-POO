@@ -1,0 +1,10 @@
+package entities;
+
+public class UsuarioHasTarefa{
+	private int Usuario_idUsuario;
+	private int Tarefa_idTarefa;
+	private String subTarefa;
+	
+	
+
+}

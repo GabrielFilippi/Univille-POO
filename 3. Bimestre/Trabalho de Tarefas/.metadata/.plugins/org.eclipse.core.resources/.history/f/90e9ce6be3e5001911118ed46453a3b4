@@ -1,0 +1,15 @@
+package functions;
+
+import dao.TarefaDAO;
+import entities.Tarefa;
+
+public class Funcoes {
+	public static String mostrarTarefa(int idUsuario) {
+		//instancia a classe TarefaDAO onde existem comandos SQL para a tarefa
+				TarefaDAO tarefaDao = new TarefaDAO();
+		for(Tarefa trf : tarefaDao.getAllByIdUsuario(idUserEscolhido)) {
+			System.out.println(trf+"\n");
+		}
+		
+	}
+}

@@ -1,0 +1,129 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Usuario;
+
+/**
+ * Pessoa Data Acess Object
+ * @author leandersonandre
+ *
+ */
+public class UsuarioDAO extends BasicoDAO{
+	
+
+	/**
+	 * Inserir uma nova pessoa
+	 * @param user
+	 */
+	public void insert(Usuario user) {
+
+		String sql_insert_User = "INSERT INTO usuario(nomeUsuario, telefoneUsuario) values(?,?)";
+		try {
+			
+			// try with-resources
+			
+			try (Connection conn = getConnection();
+				 PreparedStatement statement = conn.prepareStatement(sql_insert_User)){
+				
+				statement.setString(1, user.getNome());
+				statement.setString(2, user.getSobrenome());
+				statement.execute();
+			}
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	/**
+	 * Deletar uma pessoa pelo id
+	 * @param user
+	 */
+	public void delete(Usuario user) {
+		
+		String sql = " delete from pessoa where id = ?";
+		
+		try(Connection conn = getConnection();
+			PreparedStatement statement = conn.prepareStatement(sql)) {
+			statement.setInt(1, user.getId());
+			statement.execute();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Atualizar uma usuario pelo id
+	 * @param pessoa
+	 */
+	public void update(Usuario user) {
+		String sql = " update pessoa set nome = ?, sobrenome = ? where id = ?";
+		
+		try (Connection conn = getConnection();
+			 PreparedStatement statement = conn.prepareStatement(sql)){
+			statement.setString(1, user.getNome());
+			statement.setString(2, user.getSobrenome());
+			statement.setInt(3, user.getId());
+			statement.execute();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Obter uma pessoa pelo id
+	 * @param id
+	 * @return
+	 */
+	public Usuario getById(int id) {
+		Usuario user = null;
+		String sql = " select id, nome, sobrenome from pessoa where id = ?";
+		
+		try(Connection conn = getConnection();
+			PreparedStatement statement = conn.prepareStatement(sql)) {
+			statement.setInt(1, id);
+			ResultSet resultSet = statement.executeQuery();
+			if(resultSet.next()) {
+				user = new Usuario();
+				user.setId(resultSet.getInt(1));
+				user.setNome(resultSet.getString(2));
+				user.setSobrenome(resultSet.getString(3));
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+	
+	/**
+	 * Obter todas as usuarios da tabela
+	 * @return
+	 */
+	public List<Usuario> getAll(){
+		List<Usuario> list = new ArrayList<>();
+		String sql = " select id, nome, sobrenome from pessoa order by nome";
+		
+		try(Connection conn = getConnection();
+			PreparedStatement statement = conn.prepareStatement(sql)) {
+			ResultSet resultSet = statement.executeQuery();
+			while(resultSet.next()) {
+				Usuario user = new Usuario();
+				user.setId(resultSet.getInt(1));
+				user.setNome(resultSet.getString(2));
+				user.setSobrenome(resultSet.getString(3));
+				
+				list.add(user);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
+}

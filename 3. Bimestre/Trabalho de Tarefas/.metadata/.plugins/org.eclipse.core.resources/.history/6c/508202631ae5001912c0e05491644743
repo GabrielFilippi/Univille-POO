@@ -1,0 +1,36 @@
+package entities;
+
+import java.util.ArrayList;
+
+public class Tarefa{
+
+	private int idTarefa;
+	private String nomeTarefa;
+	private String descricaoTarefa;
+	
+	
+	public int getIdTarefa() {
+		return idTarefa;
+	}
+	
+	public String getNomeTarefa() {
+		return nomeTarefa;
+	}
+	
+	public void setNomeTarefa(String nomeTarefa) {
+		this.nomeTarefa = nomeTarefa;
+	}
+	
+	public String getDescricaoTarefa() {
+		return descricaoTarefa;
+	}
+	
+	public void setDescricaoTarefa(String descricaoTarefa) {
+		this.descricaoTarefa = descricaoTarefa;
+	}
+	
+	
+	
+	
+		
+}

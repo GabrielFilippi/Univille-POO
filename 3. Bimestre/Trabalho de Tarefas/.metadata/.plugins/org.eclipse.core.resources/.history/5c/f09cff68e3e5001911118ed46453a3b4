@@ -1,0 +1,12 @@
+package functions;
+
+import entities.Tarefa;
+
+public class Funcoes {
+	public static String mostrarTarefa(int idUsuario) {
+		for(Tarefa trf : tarefaDao.getAllByIdUsuario(idUserEscolhido)) {
+			System.out.println(trf+"\n");
+		}
+		
+	}
+}
